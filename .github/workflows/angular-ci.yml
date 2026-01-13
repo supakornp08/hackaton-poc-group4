@@ -70,17 +70,8 @@ jobs:
     name: Security Scan (SonarCloud)
     runs-on: ubuntu-latest
     needs: build
-    # Only run if SONAR_TOKEN is configured
-    if: secrets.SONAR_TOKEN != ''
     
     steps:
-      - name: Check SonarCloud Token
-        run: |
-          if [ -z "${{ secrets.SONAR_TOKEN }}" ]; then
-            echo "SONAR_TOKEN is not configured. Skipping SonarCloud scan."
-            exit 0
-          fi
-
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
@@ -98,6 +89,7 @@ jobs:
         working-directory: ${{ env.WORKING_DIRECTORY }}
 
       - name: SonarCloud Scan
+        continue-on-error: true
         uses: SonarSource/sonarcloud-github-action@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
