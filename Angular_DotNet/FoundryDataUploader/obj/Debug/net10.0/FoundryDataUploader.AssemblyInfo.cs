@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FoundryDataUploader")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fe9f1e93da3a611379e3b3212316f57a64801e0b")]
 [assembly: System.Reflection.AssemblyProductAttribute("FoundryDataUploader")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FoundryDataUploader")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
