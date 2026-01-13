@@ -95,8 +95,8 @@ jobs:
         with:
           projectBaseDir: ${{ env.WORKING_DIRECTORY }}
           args: >
-            -Dsonar.projectKey=${{ github.repository_owner }}_hackaton-poc-group4-nextjs
-            -Dsonar.organization=${{ github.repository_owner }}
+            -Dsonar.projectKey=supakornp08_hackaton-poc-group4
+            -Dsonar.organization=supakornp08
             -Dsonar.sources=src
             -Dsonar.exclusions=**/node_modules/**,**/*.test.ts,**/*.test.tsx,**/.next/**
             -Dsonar.tests=src
